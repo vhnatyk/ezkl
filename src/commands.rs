@@ -173,6 +173,7 @@ impl Cli {
 #[allow(missing_docs)]
 #[derive(Debug, Subcommand, Clone, Deserialize, Serialize)]
 pub enum Commands {
+    Empty,
     /// Loads model and prints model table
     #[command(arg_required_else_help = true)]
     Table {
