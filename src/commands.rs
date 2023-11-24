@@ -747,3 +747,38 @@ pub enum Commands {
         url: Option<String>,
     },
 }
+
+impl Commands {
+    ///
+    pub fn command_names() -> Vec<&'static str> {
+        vec![
+            "table",
+            "render-circuit",
+            "gen-witness",
+            "gen-settings",
+            "calibrate-settings",
+            "gen-srs",
+            "get-srs",
+            "compile-circuit",
+            "setup",
+            "fuzz",
+            "setup-test-evm-data",
+            "test-update-account-calls",
+            "swap-proof-commitments",
+            "prove",
+            "create-evm-verifier",
+            "create-evm-data-attestation",
+            "create-evm-verifier-aggr",
+            "verify",
+            "verify-aggr",
+            "deploy-evm-verifier",
+            "deploy-evm-data-attestation",
+            "verify-evm",
+            "print-proof-hex",
+            "get-hub-credentials",
+            "create-hub-artifact",
+            "prove-hub",
+            "get-hub-proof",
+        ]
+    }
+}
